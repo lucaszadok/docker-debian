@@ -1,4 +1,6 @@
 FROM debian:jessie
 
-RUN ./config/prepare.sh && \
-    ./config/installnode.sh
+ADD ./config /config_build
+
+RUN /config_build/prepare.sh && \
+	/config_build/installnode.sh
