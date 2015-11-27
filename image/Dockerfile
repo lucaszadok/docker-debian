@@ -1,3 +1,5 @@
 FROM debian:jessie
 
-RUN ./config/prepare.sh
+ADD ./config /config_build
+
+RUN /config_build/prepare.sh
