@@ -15,5 +15,5 @@ locale-gen en_US
 update-locale LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-
 
 ## Often used tools.
-apt-get install -y --no-install-recommends curl less vim-tiny psmisc git-core
+apt-get install -y --no-install-recommends curl less vim-tiny psmisc bzip2 git-core
 ln -s /usr/bin/vim.tiny /usr/bin/vim
